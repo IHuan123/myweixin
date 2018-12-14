@@ -1,0 +1,86 @@
+/* pages/login/login.wxss */
+.login{
+  width:100%;
+}
+.head-portrait{
+  width:100%;
+  height:150rpx;
+  text-align: center;
+  margin-top:30rpx;
+}
+.head-portrait image{
+  width:150rpx;
+  height:150rpx;
+}
+.loginBox{
+  width:70%;
+  margin: 0 auto;
+  margin-top:100rpx;
+}
+.uname,.upwd{
+  width:100%;
+  height:100rpx;
+  border:1rpx solid #ddd;
+  margin-top:20rpx;
+  border-radius: 15rpx;
+  font-size:12px;
+  padding:20rpx;
+  box-sizing:border-box;
+}
+.loginBtn{
+  margin-top:20rpx;
+  background:white;
+  color:rgb(255,41,85);
+  font-size:20px;
+  font-weight:bold;
+  border:3rpx solid rgb(255,41,85);
+}
+.regBtn{
+  margin-top:20rpx;
+  background:white;
+  color:rgb(196, 196, 196);
+  font-size:20px;
+  font-weight:bold;
+}
+.logined{
+  width:100%;
+}
+.login-portrait{
+  width:180rpx;
+  height:180rpx;
+  margin:20rpx auto;
+}
+.login-portrait image{
+    width:180rpx;
+    height:180rpx;
+    border-radius: 50%;
+}
+.login-name{
+  width:100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color:#ccc;
+}
+.logout{
+  width:100%;
+  margin-top:30rpx;
+}
+.logout button{
+  width:70%;
+  height:100rpx;
+  margin:0 auto;
+  font-size:20px;
+  color:#ccc;
+  background:white;
+  font-weight: bold;
+  border:3rpx solid #ccc;
+}
+
+.wxlogin{
+  margin-top:20rpx;
+  background:white;
+  color:rgb(3, 182, 93);
+  font-size:20px;
+  font-weight:bold;
+}

@@ -1,0 +1,52 @@
+/* weui.wxss */
+/* @import "weui.wxss"; */
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+} 
+/* image{
+  background:#ddd;
+} */
+/* 音乐播放器控件 */
+.music{
+  z-index: 1;
+  width:100%;
+  height:100rpx;
+  position:fixed;
+  bottom:0;
+  left: 0;
+  background-image:-webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(230,230,230,0.9));
+  border-top:1px solid #ddd;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  
+}
+.music-control{
+  display: flex;
+  align-items:center;
+}
+.music-img,.paly{
+  height:70rpx;
+}
+.music-title text{
+  font-size:14px;
+}
+.music-img image,.paly image{
+  height:70rpx;
+  width:70rpx;
+  margin:0 20rpx 
+}
+/* 头部标题 */
+.header-title{
+  font-size:20px;
+  font-weight:900;
+  margin-left:20rpx;
+}

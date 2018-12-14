@@ -1,0 +1,34 @@
+
+<view class="adfMcontainer">
+  <!-- 最近添加音乐列表 -->
+  
+  <view class="header">
+    <text class="mtitle">最近添加></text>
+    <view class="login-btn" bindtap='login'><image src="http://localhost:3000/image/icon-me.png" lazy-load="{{true}}" mode="aspectFit"></image></view>
+  </view>
+  <view class="music-list">
+
+    <view class="music-item" wx:for="{{mymusiclist}}" wx:key="{{item.add}}">
+      <view class="music-detail">
+        <image src="../../tabbar/default-photo.png" lazy-load="{{true}}" mode="aspectFit" data-index="{{index}}" data-mname='{{item.mname}}' bindtap='onMusicTap'></image>
+      </view>
+      <view class="title-box">
+        <view class="title">
+            <view class="music-name"><text>{{item.mname}}</text></view>
+            <view class="author"><text>{{item.author}}</text></view>     
+        </view>
+        <view class="remove" bindtap='remove' data-index="{{index}}"><text>删除</text></view>     
+      </view>
+
+    </view>
+    
+  </view>
+</view>
+<!-- 音乐播放控件 -->
+  <view class="music">
+    <view class="music-control">
+      <view class="music-img"><image src="../../tabbar/default-photo.png" lazy-load="{{true}}" mode="aspectFit"></image></view>
+      <view class="music-title"><text>{{songname}}</text></view>
+    </view>
+    <view class="paly" bindtap='playButton'><image src="{{playIcon}}" lazy-load="{{true}}" mode="aspectFit"></image></view>
+  </view>

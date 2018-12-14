@@ -1,0 +1,58 @@
+<!--pages/for-you/for-you.wxml-->
+<!-- <text>pages/for-you/for-you.wxml 为你推荐</text> -->
+<view class="header-title"><text>为你推荐</text></view>
+<view class="for-you">
+  <!-- 横向滑动 -->
+  <swiper duration="300" class="swiper">
+    <!-- <block wx:for="{{imgUrls}}"> -->
+      <swiper-item class="swiper-image">
+        <image src="http://localhost:3000/image/xinfaxin.png" class="slide-image" lazy-load="{{true}}" data-type="2000" mode="aspectFill" bindtap="getdarinpeerless"/>
+      </swiper-item>
+
+      <swiper-item class="swiper-image">
+        <image src="http://localhost:3000/image/fangsong.png" class="slide-image" lazy-load="{{true}}" data-type="2001" bindtap="getdarinpeerless" mode="aspectFill"/>
+      </swiper-item>
+    <!-- </block> -->
+  </swiper>
+
+<!-- 歌单 滚动-->
+  <view class="song-list">
+
+  <view class="song-list-title">歌单</view>
+
+   <scroll-view scroll-into-view class="song-scroll" scroll-x="true" scroll-with-animation="true">
+      <view wx:for="{{songlist}}" wx:key="{{item.sid}}" data-type="{{item.tid}}" bindtap="getdarinpeerless" class="song-item"><image src="{{item.songImg}}" class="slide-image" lazy-load="{{true}}" mode="aspectFill"/> <view class="song-title"><text>{{item.songtitle}}</text></view></view>
+    </scroll-view>   
+
+  </view>
+
+
+
+
+</view>
+
+
+<!-- 专辑 -->
+<view class="album">
+  <view class="song-list-title">专辑</view>
+  <view>  
+    <scroll-view scroll-into-view class="album-scroll" scroll-x="true">
+      <view class="album-box">
+        <view class="album-item" wx:for="{{album}}" wx:key="{{item.zid}}" data-type="{{item.tid}}" bindtap="getdarinpeerless">
+          <image src="{{item.albumImg}}" class="slide-image" lazy-load="{{true}}" mode="aspectFill"/> 
+          <view class="song-title"><text>{{item.albumtitle}}</text></view>
+        </view>
+      </view>
+    </scroll-view>      
+  </view>
+
+</view>
+
+<!-- 音乐播放控件 -->
+  <view class="music">
+    <view class="music-control">
+      <view class="music-img"><image src="../../tabbar/default-photo.png" lazy-load="{{true}}" mode="aspectFit"></image></view>
+      <view class="music-title"><text>{{songname}}</text></view>
+    </view>
+    <view class="paly" bindtap='onMusicTap'><image src="{{playIcon}}" lazy-load="{{true}}" mode="aspectFit"></image></view>
+  </view>

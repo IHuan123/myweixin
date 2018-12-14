@@ -1,0 +1,25 @@
+<!--pages/login/login.wxml-->
+<view class="login" wx:if="{{islogin}}">
+  <view class="head-portrait">
+    <image src="http://localhost:3000/image/icon-me.png" lazy-load="{{true}}" mode="aspectFit"></image>
+  </view>
+
+  <view class="loginBox">
+  <form bindsubmit='login'>
+    <input class="uname" type="text" name="uname" placeholder='请输入用户名'></input>
+    <input class="upwd" type="password" name="upwd" placeholder='请输入用户密码'></input>
+    <button class="loginBtn" form-type="submit">登录</button>  
+  </form>
+    <button class="wxlogin" bindtap="wxlogin">微信登录</button>
+    <button class="regBtn" bindtap="regBtn">注册</button>
+  </view>
+</view>
+  <view class="logined" wx:else>
+    <view class="login-portrait">
+      <image src="https://wx.qlogo.cn/mmopen/vi_32/bI36qEFAI9A9Kh8MU2w4u72qCYSViaBZWgRa58aQZYrnktVibyON1b4hdIvK9OaHHJZfJPFJqRRqTbdEcmIJ9DSQ/132" lazy-load="{{true}}" mode="aspectFit"></image>
+    </view>
+    <view class="login-name"><text>{{uname}}</text></view>
+    <view class="logout"><button>注销</button></view>
+  </view>
+
+

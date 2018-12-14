@@ -1,0 +1,42 @@
+/* pages/register/register.wxss */
+.himg{
+  width:100%;
+
+}
+.regImg{
+  width:150rpx;
+  height:150rpx;
+  margin:20rpx auto;
+}
+.regImg image{
+  width:150rpx;
+  height:150rpx;
+}
+.regtitle{
+  text-align: center;
+  font-size:20px;
+  font-weight:bold;
+}
+.regBox{
+  width:100%；
+}
+.uname,.upwd,.cPwd{
+  width:80%;
+  height:100rpx;
+  border:1px solid #ccc;
+  border-radius:15rpx;
+  margin:20rpx auto;
+  font-size:14px;
+  padding:10rpx;
+  box-sizing:border-box;
+}
+.regB{
+  width:80%;
+  height:80rpx;
+  margin:20rpx auto;
+  background:white;
+  font-size:20px;
+  font-weight: bold;
+  border:3rpx solid rgb(2, 128, 44);
+  line-height: 80rpx;
+}

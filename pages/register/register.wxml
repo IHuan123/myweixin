@@ -1,0 +1,14 @@
+<!--pages/register/register.wxml-->
+<view class="himg">
+  <view class="regImg"><image src="http://localhost:3000/image/icon-me.png" lazy-load="{{true}}" mode="aspectFit"></image></view>
+  <view class="regtitle"><text>注册</text></view>
+</view>
+
+<view class="regBox">
+  <form bindsubmit='reg'>
+    <input type="text" name="uname" class="uname" placeholder='请输入用户名'></input>
+    <input type="password" name="upwd" class="upwd" placeholder='请输入密码'></input>
+    <input type="password" name="cpwd" class="cPwd" placeholder='再次确认密码'></input>
+    <button class="regB" form-type="submit">注册</button>
+  </form>
+</view>

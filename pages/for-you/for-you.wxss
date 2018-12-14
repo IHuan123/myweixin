@@ -1,0 +1,78 @@
+/* pages/for-you/for-you.wxss */
+
+.for-you{
+width:100%;
+margin-bottom:100rpx;
+}
+.swiper-image{
+  text-align:center;
+  height:300rpx;
+}
+.slide-image{
+  width:90%;
+  height:300rpx;
+  border-radius: 15rpx;
+}
+.swiper{
+  margin-top:20rpx;
+  height:300rpx;
+}
+
+/* 歌单 */
+.song-list{
+  width:100%;
+  margin-top:20rpx;
+}
+.song-list-title{
+  font-size:15px;
+  font-weight:900;
+  margin-left:20rpx;
+}
+.song-item{
+  width:260rpx;
+  height:350rpx;
+  display:inline-block;
+  margin:20rpx;
+}
+.song-scroll{
+  height:350rpx;
+  display:flex;
+  white-space: nowrap;
+}
+.song-item image{
+  width:260rpx;
+  height:260rpx;  
+  border-radius: 15rpx;
+}
+.song-title{
+  height:90rpx;
+  overflow: hidden;
+}
+.song-title text{
+  font-size:14px;
+}
+
+/* 专辑 */
+.album{
+  margin-bottom:100rpx;
+  width:100%;
+}
+.album-item{
+  width:260rpx;
+  height:350rpx;
+  display:inline-block;
+  margin:20rpx;
+}
+.album-item image{
+  width:260rpx;
+  height:260rpx;  
+  border-radius: 15rpx;
+}
+.album-scroll{
+  height:800rpx;
+  display:flex;
+  white-space:wrap;
+}
+.album-box{
+  width:1200rpx;
+}

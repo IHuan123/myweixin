@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/my-music/my-music",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/for-you/for-you",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/explore/explore",
+    "pages/search/search",
+    "pages/muisc-list/muisc-list",
+    "pages/music/music"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#ff2d55",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/my-music/my-music",
+        "iconPath": "tabbar/1.png",
+        "selectedIconPath": "tabbar/1-hl.png",
+        "text": "我的音乐"
+      },
+      {
+        "pagePath": "pages/for-you/for-you",
+        "iconPath": "tabbar/2.png",
+        "selectedIconPath": "tabbar/2-hl.png",
+        "text": "为你推荐"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+        "iconPath": "tabbar/3.png",
+        "selectedIconPath": "tabbar/3-hl.png",
+        "text": "浏览"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "tabbar/5.png",
+        "selectedIconPath": "tabbar/5-hl.png",
+        "text": "搜索"
+      }
+    ]
+  }
+}

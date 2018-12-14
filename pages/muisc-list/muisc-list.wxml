@@ -1,0 +1,31 @@
+<!--pages/muisc-list/muisc-list.wxml-->
+<!-- <text>pages/muisc-list/muisc-list.wxml</text> -->
+<view class="header-title"><text>歌曲列表</text></view>
+
+
+<view class="songlist">
+  <view class="songitem" wx:for="{{darinPeerless}}" wx:key="{{item.mid}}">
+    <view class="songbox">
+
+      <view class="songzut" bindtap='onMusicTap'   data-index="{{index}}"  data-mname="{{item.mname}}">
+        <view class="image"><image src="../../tabbar/default-photo.png" class="slide-image" lazy-load="{{true}}" mode="aspectFill"></image></view>
+        <text>{{item.mname}}</text>    
+   
+      </view>
+        <view class="addbtn">
+          <text bindtap='addmusic'  data-index="{{index}}">+</text>
+        </view>
+      </view>
+  </view>
+
+</view>
+
+
+<!-- 音乐播放控件 -->
+  <view class="music">
+    <view class="music-control">
+      <view class="music-img"><image src="../../tabbar/default-photo.png" lazy-load="{{true}}" mode="aspectFit"></image></view>
+      <view class="music-title"><text>{{songname}}</text></view>
+    </view>
+    <view class="paly" bindtap='onMusicTap'><image src="{{playIcon}}" lazy-load="{{true}}" mode="aspectFit"></image></view>
+  </view>

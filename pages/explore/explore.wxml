@@ -1,0 +1,38 @@
+<!--pages/explore/explore.wxml-->
+<!-- <text>pages/explore/explore.wxml浏览</text> -->
+<view class="header-title"><text>浏览</text></view>
+  <swiper class="lswiper" duration='500'>
+    <swiper-item class="scon" wx:for="{{lList}}" wx:key="{{item.eid}}" data-type="{{item.tid}}" bindtap="getdarinpeerless">
+      <view>
+      <view class="ltitle"><text>{{item.etitle}}</text></view>
+      <view class="author"><text>{{item.author}}</text></view>
+        <view class="box">
+          <view class="imgbox"><image src='{{item.eimg}}' lazy-load='true' mode="aspectFill"></image></view>
+        </view>
+      </view>    
+    </swiper-item>   
+  </swiper>
+<view>
+</view>
+<view class="placetitle"><text>各国风格</text></view>
+<view class="place">
+  <view class="pbox">
+
+    <view class="place-item" wx:for="{{placelist}}" wx:key="item.pid">
+      <view class="pimg">
+        <image src="{{item.pimg}}" lazy-load="true" mode="aspectFill" data-type="{{item.tid}}" bindtap="getdarinpeerless"></image>
+      </view>
+      <view class="pname"><text>{{item.ptitle}}</text></view>
+    </view>
+
+  </view>
+</view>
+
+<!-- 音乐播放控件 -->
+  <view class="music">
+    <view class="music-control">
+      <view class="music-img"><image src="../../tabbar/default-photo.png" lazy-load="{{true}}" mode="aspectFit"></image></view>
+      <view class="music-title"><text>{{songname}}</text></view>
+    </view>
+    <view class="paly" bindtap='onMusicTap'><image src="{{playIcon}}" lazy-load="{{true}}" mode="aspectFit"></image></view>
+  </view>

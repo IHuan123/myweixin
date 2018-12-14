@@ -1,0 +1,88 @@
+/* pages/search/search.wxss */
+.search{
+  width:75%;
+  height: 50rpx;
+  border-radius: 20rpx;
+  background:rgb(243, 241, 241);
+  box-sizing: border-box;
+  padding:0 20rpx;
+  font-size:13px;
+}
+.searchBox{
+  width:100%;
+  height:100rpx;
+  background:white;
+
+}
+.sBtn{
+  width:20%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size:14px;
+  border:0;
+  background:white;
+  color:#aaa;
+  /* border-radius: 20rpx; */
+}
+.sBox{
+  width:80%;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-between;
+  margin-top:20rpx;
+}
+
+
+/* pages/muisc-list/muisc-list.wxss */
+.songlist{
+  width:100%;
+  margin-bottom:100rpx;
+}
+.songitem{
+  width:100%;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid #ddd;
+}
+.songbox{
+  width:90%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:120rpx;
+}
+.slide-image{
+  
+  width:90rpx;
+  height:90rpx;
+}
+.image{
+  width:90rpx;
+  height:90rpx;  
+}
+.songbox image{
+  display: inline-block;
+  width:90rpx;
+  height:90rpx;
+  margin-right: 20rpx;
+}
+.songbox text{
+  font-size:14px;
+  margin-left:20rpx; 
+}
+.addbtn text{
+  font-size:25px;
+  font-weight: 900;
+  color:red;
+}
+.audio{
+  width:100%;
+  height:200rpx;
+}
+.songzut{
+  display:flex;
+  width:70%;
+  align-items:center;
+}
+
