@@ -84,6 +84,11 @@ Page({
       uname:uname,
       islogin:false
     })
+    wx.showToast({
+      title: '登录成功',
+      icon:"none",
+      duration:2000
+    })
     console.log(uname)
   },
   islogin:function(){
